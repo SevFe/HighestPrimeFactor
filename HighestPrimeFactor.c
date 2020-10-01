@@ -15,7 +15,7 @@ int main(void)
 
 int primeFactor(int x)
 {
-  int numberHolder[1];
+  int numberHolder;
 
   if (x <= 1)
   {
@@ -25,7 +25,7 @@ int primeFactor(int x)
 
   while (x % 2 == 0)
   {
-    numberHolder[0] = 2;
+    numberHolder = 2;
     x = x/2;
   }
 
@@ -33,11 +33,11 @@ int primeFactor(int x)
   {
     while (x % i == 0)
     {
-      numberHolder[0] = i;
+      numberHolder = i;
       x = x/i; 
     }
   }
 
-  printf("The highest prime factor is: %d\n", numberHolder[0]);
+  printf("The highest prime factor is: %d\n", numberHolder);
   return 0;
 }
