@@ -18,5 +18,6 @@ def primeFactor(x):
       x = x//i
 
   print("The highest prime factor is:", numberHolder)
+  return True
 
 primeFactor(numberGiven)
